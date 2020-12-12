@@ -1,0 +1,26 @@
+{
+  "name": "bin",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-deriving": "^44.2.0",
+    "bs-platform": "^7.0.1",
+    "ppx-deriving": "^44.2.0"
+  },
+  "dependencies": {
+    "@pckilgore/bs-biginteger": "^1.0.1",
+    "@roddynpm/bs-yojson": "^0.3.0",
+    "big-integer": "^1.6.48",
+    "bs-batteries": "^0.0.14",
+    "bs-zarith": "^3.1.0"
+  }
+}

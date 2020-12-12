@@ -1,0 +1,18 @@
+--- ulib/prims.ml	2020-12-12 11:21:20.322814251 -0800
++++ /usr/local/pkg/fstar/ulib/ml/prims.ml	2020-12-11 09:40:47.489942500 -0800
+@@ -2,14 +2,12 @@
+ let parse_int = Z.of_string
+ let to_string = Z.to_string
+ 
+-(*
+-type tmp_to_yojson = string [@@deriving yojson]
++type tmp = string [@@deriving yojson]
+ let int_to_yojson x = tmp_to_yojson (to_string x)
+ let int_of_yojson x = 
+   match tmp_of_yojson x with
+   | Ok x -> Ok (parse_int x)
+   | Error x -> Error x
+-*)
+ 
+ type attribute = unit
+ let (cps : attribute) = ()

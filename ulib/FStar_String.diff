@@ -1,0 +1,11 @@
+--- FStar_String.ml	2020-12-12 11:39:09.479776170 -0800
++++ /usr/local/pkg/fstar/ulib/ml/FStar_String.ml	2020-12-11 09:40:47.489942500 -0800
+@@ -6,7 +6,7 @@
+     | [] -> acc
+     | sep::seps ->
+        let usep = BatUTF8.init 1 (fun _ -> BatUChar.chr sep) in
+-       let l = BatList.flatten (BatList.map (fun x -> BatString.nsplit x ~by:usep) acc) in
++       let l = BatList.flatten (BatList.map (fun x -> BatString.nsplit x usep) acc) in
+        repeat_split l seps in
+   repeat_split [s] seps
+ let compare x y = Z.of_int (BatString.compare x y)

@@ -1,0 +1,23 @@
+{
+    "name": "bin",
+    "version": "0.1.0",
+    "sources": ["ulib","z","src"],
+    "package-specs": {
+        "module": "commonjs",
+        "in-source": true
+    },
+    "suffix": ".bs.js",
+    "bs-dependencies": [
+        "bs-batteries",
+        "@pckilgore/bs-biginteger",
+        "@roddynpm/bs-yojson",
+        "bs-deriving"
+    ],
+    "ppx-flags": [
+        "ppx-deriving/ppx.js"
+    ],
+    "warnings": {
+        "error" : "+101"
+    },
+    "refmt": 3
+}
