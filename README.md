@@ -12,6 +12,7 @@ You shoud run the generate script first.
 
 # Build
 ```
+yarn install
 make
 ```
 
